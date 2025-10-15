@@ -5,6 +5,7 @@ import HeroBillboard from '@/components/sections/hero/HeroBillboard';
 import SplitAbout from '@/components/sections/about/SplitAbout';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
+import { ArrowRight, Star } from 'lucide-react';
 
 const assetMap: { id: string; url: string; alt?: string }[] = [
   { id: 'heroImage', url: 'https://images.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', alt: 'Vibrant abstract pattern of illuminated red LED lights forming a dynamic design.' },
@@ -50,8 +51,8 @@ export default function Home() {
         <div className="mx-auto px-4 md:px-6">
           <SplitAbout
             bulletPoints={[
-              { title: 'Our Mission', description: 'To deliver cutting-edge solutions', icon: 'ArrowRight' },
-              { title: 'Our Team', description: 'Diverse and experienced professionals', icon: 'Star' },
+              { title: 'Our Mission', description: 'To deliver cutting-edge solutions', icon: ArrowRight },
+              { title: 'Our Team', description: 'Diverse and experienced professionals', icon: Star },
             ]}
             imageSrc="asset://aboutImage"
             className="bg-blue-50"
